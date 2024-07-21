@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@font-face {
+  font-family: 'MetalMania';
+  src: url('/fonts/MetalMania-Regular.ttf') format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+.neon-glow {
+  text-shadow: 0 0 5px #F02525, 0 0 10px #F02525, 0 0 15px #F02525, 0 0 20px #F02525, 0 0 25px #F02525, 0 0 30px #F02525, 0 0 35px #F02525;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+.absolute {
+  position: absolute;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.item-title {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  text-align: center;
+}
+
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 5px #F02525, 0 0 10px #F02525, 0 0 15px #F02525, 0 0 20px #F02525, 0 0 25px #F02525, 0 0 30px #F02525, 0 0 35px #F02525;
+  }
+  to {
+    text-shadow: 0 0 10px #ff5757, 0 0 20px #ff5757, 0 0 30px #ff5757, 0 0 40px #ff5757, 0 0 50px #ff5757, 0 0 60px #ff5757, 0 0 70px #ff5757;
+  }
+}
+
+.neon-border {
+  border: 2px solid #F02525;
+  box-shadow: 0 0 10px #F02525, 0 0 20px #F02525, 0 0 30px #F02525;
+  border-radius: 8px;
+}
+
+.neon-border-button {
+  border: 2px solid #F02525;
+  box-shadow: 0 0 10px #F02525, 0 0 20px #F02525, 0 0 30px #F02525;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.neon-border-button:hover {
+  background-color: #F02525;
+  color: #fff;
+}
+
+.roboto-mono-font {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.font-outline, .font-outline-second {
+  display: block;
+  font-size: 2rem;
+  color: white;
+  -webkit-text-stroke: 1px #f79f1a;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+.font-filled, .font-filled-second {
+  display: block;
+  font-size: 2rem;
+  color: #f79f1a;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+.filter-white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(100%);
+}
+
+.promotion-header {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  animation: slideDown 1s forwards, stayVisible 3s 1s forwards, slideUp 1s 4s forwards;
+}
+
+.promotion-header-second {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  width: auto;
+  text-align: left;
+  animation: slideUpFromLeft 1s forwards, stayVisible 3s 1s forwards, slideUp 1s 4s forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes stayVisible {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+@media (min-width: 768px) {
+  .font-outline, .font-outline-second, .font-filled, .font-filled-second {
+    font-size: 3rem;
+  }
+  .promotion-header {
+    left: 24%;
+  }
+}
+
+.light-effect {
+  box-shadow: 0 0 20px rgba(255, 140, 0, 1), 0 0 30px rgba(255, 140, 0, 1), 0 0 40px rgba(255, 140, 0, 1), 0 0 50px rgba(255, 140, 0, 1), 0 0 60px rgba(255, 140, 0, 1);
+  border-radius: 10px; /* Adjust if you want rounded corners */
+}
+.watch-now-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 160px;
+}
+
+.watch-now-title {
+  text-align: center;
+}
+
+.overflow-x-auto {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.light-border {
+  border-color: rgba(255, 0, 0, 0.5);
+}
+
+.neon-glow {
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.75), 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+
+.store-container {
+  position: relative;
+  padding: 2rem;
+}
+
+.store-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.store-title {
+  font-family: 'MetalMania', sans-serif;
+  font-size: 4rem;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  background-color: #000;
+  padding: 0 1rem;
+  margin-left: 2rem;
+}
+
+.store-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.store-item {
+  text-align: center;
+}
+
+.store-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.store-item button {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: 'MetalMania', sans-serif;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.store-item button:hover {
+  background-color: #cc0000;
+}
+
+.nav-arrow {
+  background-color: #ff0000;
+  color: #000000;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-arrow:hover {
+  background-color: #cc0000;
+}
+
+.nav-arrow.left {
+  position: absolute;
+  left: -2rem;
+}
+
+.nav-arrow.right {
+  position: absolute;
+  right: -2rem;
+}
+
+button.shop-now-button {
+  background-color: #000;
+  border: 2px solid #F02525;
+  color: #F02525;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 10;
+}
+
+button.shop-now-button:hover {
+  background-color: #F02525;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  button.shop-now-button {
+    position: absolute;
+    top: 0;
+    right: 110px;
+    transform: translate(50%, -50%);
+  }
+}
+
+.neon-border-orange {
+  position: relative;
+  background: #111; /* Background color */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(255, 140, 0, 1), 0 0 60px rgba(255, 140, 0, 1), 0 0 80px rgba(255, 140, 0, 1);
+}
+
+.neon-border-orange::before,
+.neon-border-orange::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid rgba(255, 140, 0, 1);
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(255, 140, 0, 1), 0 0 60px rgba(255, 140, 0, 1), 0 0 80px rgba(255, 140, 0, 1);
+  pointer-events: none;
+  z-index: -1; /* Ensure the pseudo-elements are behind the content */
+}
+
+.neon-border-orange::before {
+  transform: translate(10px, 10px);
+  border-color: rgba(255, 140, 0, 1); /* Slightly different color for more depth */
+  box-shadow: 0 0 40px rgba(255, 140, 0, 1), 0 0 60px rgba(255, 140, 0, 1), 0 0 80px rgba(255, 140, 0, 1);
+}
+
+.neon-border-orange::after {
+  transform: translate(-10px, -10px);
+  border-color: rgba(255, 140, 0, 1); /* Slightly different color for more depth */
+  box-shadow: 0 0 40px rgba(255, 140, 0, 1), 0 0 60px rgba(255, 140, 0, 1), 0 0 80px rgba(255, 140, 0, 1);
+}
+
+.futuristic-line {
+  background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,212,255,1) 100%);
+  height: 2px;
+  border: none;
+  margin: 20px 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+futuristic-font {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.light-effect1 {
+  color: #ff0000;
+  text-shadow: 
+    0 0 5px #ff0000,
+    0 0 10px #ff0000,
+    0 0 20px #ff0000,
+    0 0 30px #ff0000,
+    0 0 40px #ff0000,
+    0 0 50px #ff0000,
+    0 0 60px #ff0000;
+}
+
+/* Base styles: Applied universally unless overridden by media queries */
+.rectangle {
+  width: 40%; /* Default width */
+  height: 500px; /* Default height */
+  border: 1px solid #ff0000;
+  border-radius: 15px;
+  box-shadow: 
+      0 0 5px #ff0000,
+      0 0 10px #ff0000,
+      0 0 15px #ff0000,
+      0 0 20px #ff0000,
+      0 0 25px #ff0000;
+  overflow-y: auto; /* Keep scrolling inside rectangle if content exceeds */
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 80px; /* Adjust margin to fit layout */
+  margin-top: 20px; /* Added top margin for spacing */
+}
+.rectangle .content {
+  padding: 20px; /* Ensuring enough padding */
+  font-family: 'Indie Flower', sans-serif; /* Maintaining the same font */
+  color: white;
+  line-height: 2.1; /* Keeping line height for readability */
+}
+img.top-left-photo, img.float-right, img.higher-photo, img.float-left {
+  width: 200px; /* Default width for images */
+  height: auto;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+img.float-right {
+  width: 250px; /* Specific width for right floating images */
+}
+img.higher-photo {
+  position: relative;
+  top: 0px; /* Keep image at relative top position */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .rectangle {
+      width: 95%; /* Adapt width to mobile */
+      height: auto; /* Flexible height to accommodate content on mobile */
+      margin-top: 10px; /* Reduced top margin on mobile */
+  }
+  .rectangle .content {
+      font-family: 'Indie Flower', sans-serif; /* Ensure font consistency */
+  }
+  img.top-left-photo, img.float-right, img.higher-photo, img.float-left {
+      width: 100%; /* Full width images on mobile for better visibility */
+      margin-right: 0; /* Remove right margin for better fit */
+  }
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 300px; /* Increased width from 250px to 300px */
+  align-items: center; /* Centers the inner container horizontally */
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  border-radius: 20px; /* Rounded corners with 20px radius */
+  overflow: hidden; /* Ensures children don't overflow rounded corners */
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 15px;
+  width: 100%; /* Ensure it takes the full width of the container */
+  text-align: center; /* Center the text */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+}
+
+.menu-item:not(:last-child) {
+  border-bottom: 1px solid red; /* Separator for items except last */
+}
+
+.menu-item:hover {
+  background-color: red; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
