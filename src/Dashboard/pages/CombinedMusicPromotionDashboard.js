@@ -7,7 +7,7 @@ const CombinedMusicPromotionDashboard = () => {
   const [description, setDescription] = useState('');
   const [listenNowLink, setListenNowLink] = useState('');
   const [imageUrl, setImageUrl] = useState('');
-  const [buttonColor, setButtonColor] = useState('#FF0000'); // Default red button color
+  const [buttonColor, setButtonColor] = useState('#FF0000'); 
 
   useEffect(() => {
     fetchPromotions();

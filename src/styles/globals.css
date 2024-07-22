@@ -166,7 +166,7 @@ html, body {
 
 .light-effect {
   box-shadow: 0 0 20px rgba(255, 140, 0, 1), 0 0 30px rgba(255, 140, 0, 1), 0 0 40px rgba(255, 140, 0, 1), 0 0 50px rgba(255, 140, 0, 1), 0 0 60px rgba(255, 140, 0, 1);
-  border-radius: 10px; /* Adjust if you want rounded corners */
+  border-radius: 10px; 
 }
 .watch-now-container {
   max-width: 1200px;
@@ -324,18 +324,18 @@ button.shop-now-button:hover {
   border-radius: 10px;
   box-shadow: 0 0 40px rgba(255, 140, 0, 1), 0 0 60px rgba(255, 140, 0, 1), 0 0 80px rgba(255, 140, 0, 1);
   pointer-events: none;
-  z-index: -1; /* Ensure the pseudo-elements are behind the content */
+  z-index: -1; 
 }
 
 .neon-border-orange::before {
   transform: translate(10px, 10px);
-  border-color: rgba(255, 140, 0, 1); /* Slightly different color for more depth */
+  border-color: rgba(255, 140, 0, 1); 
   box-shadow: 0 0 40px rgba(255, 140, 0, 1), 0 0 60px rgba(255, 140, 0, 1), 0 0 80px rgba(255, 140, 0, 1);
 }
 
 .neon-border-orange::after {
   transform: translate(-10px, -10px);
-  border-color: rgba(255, 140, 0, 1); /* Slightly different color for more depth */
+  border-color: rgba(255, 140, 0, 1); 
   box-shadow: 0 0 40px rgba(255, 140, 0, 1), 0 0 60px rgba(255, 140, 0, 1), 0 0 80px rgba(255, 140, 0, 1);
 }
 
@@ -363,10 +363,10 @@ futuristic-font {
     0 0 60px #ff0000;
 }
 
-/* Base styles: Applied universally unless overridden by media queries */
+
 .rectangle {
-  width: 40%; /* Default width */
-  height: 500px; /* Default height */
+  width: 40%; 
+  height: 500px; 
   border: 1px solid #ff0000;
   border-radius: 15px;
   box-shadow: 
@@ -375,44 +375,44 @@ futuristic-font {
       0 0 15px #ff0000,
       0 0 20px #ff0000,
       0 0 25px #ff0000;
-  overflow-y: auto; /* Keep scrolling inside rectangle if content exceeds */
+  overflow-y: auto; 
   background-color: rgba(0, 0, 0, 0.8);
-  margin-bottom: 80px; /* Adjust margin to fit layout */
-  margin-top: 20px; /* Added top margin for spacing */
+  margin-bottom: 80px; 
+  margin-top: 20px; 
 }
 .rectangle .content {
-  padding: 20px; /* Ensuring enough padding */
-  font-family: 'Indie Flower', sans-serif; /* Maintaining the same font */
+  padding: 20px;
+  font-family: 'Indie Flower', sans-serif; 
   color: white;
-  line-height: 2.1; /* Keeping line height for readability */
+  line-height: 2.1; 
 }
 img.top-left-photo, img.float-right, img.higher-photo, img.float-left {
-  width: 200px; /* Default width for images */
+  width: 200px; 
   height: auto;
   margin-right: 16px;
   margin-bottom: 16px;
 }
 img.float-right {
-  width: 250px; /* Specific width for right floating images */
+  width: 250px; 
 }
 img.higher-photo {
   position: relative;
-  top: 0px; /* Keep image at relative top position */
+  top: 0px; 
 }
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   .rectangle {
-      width: 95%; /* Adapt width to mobile */
-      height: auto; /* Flexible height to accommodate content on mobile */
-      margin-top: 10px; /* Reduced top margin on mobile */
+      width: 95%; 
+      height: auto; 
+      margin-top: 10px; 
   }
   .rectangle .content {
-      font-family: 'Indie Flower', sans-serif; /* Ensure font consistency */
+      font-family: 'Indie Flower', sans-serif; 
   }
   img.top-left-photo, img.float-right, img.higher-photo, img.float-left {
-      width: 100%; /* Full width images on mobile for better visibility */
-      margin-right: 0; /* Remove right margin for better fit */
+      width: 100%; 
+      margin-right: 0; 
   }
 }
 .sidebar {
@@ -420,31 +420,31 @@ img.higher-photo {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  width: 300px; /* Increased width from 250px to 300px */
-  align-items: center; /* Centers the inner container horizontally */
+  width: 300px; 
+  align-items: center; 
 }
 
 .menu-container {
   display: flex;
   flex-direction: column;
   border: 2px solid red;
-  border-radius: 20px; /* Rounded corners with 20px radius */
-  overflow: hidden; /* Ensures children don't overflow rounded corners */
+  border-radius: 20px; 
+  overflow: hidden; 
 }
 
 .menu-item {
   cursor: pointer;
   padding: 15px;
-  width: 100%; /* Ensure it takes the full width of the container */
-  text-align: center; /* Center the text */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+  width: 100%; 
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 .menu-item:not(:last-child) {
-  border-bottom: 1px solid red; /* Separator for items except last */
+  border-bottom: 1px solid red; 
 }
 
 .menu-item:hover {
-  background-color: red; /* Change background color on hover */
-  color: black; /* Change text color on hover */
+  background-color: red;
+  color: black; 
 }

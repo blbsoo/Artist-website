@@ -87,7 +87,7 @@ const SubscribeNow = () => {
     boxShadow: '0 0 20px rgba(0, 255, 242, 0.8)',
     marginBottom: '20px',
     position: 'relative',
-    top: '-90px' // Adjust the top property as needed
+    top: '-90px' 
   };
 
   return (

@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customRed: '#F02525', // Add your custom color here
+        customRed: '#F02525', 
       },
       fontSize: {
-        '3.25xl': '2rem',   // 32px
-        '3.5xl': '2.125rem', // 34px
+        '3.25xl': '2rem',   
+        '3.5xl': '2.125rem', 
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

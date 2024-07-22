@@ -22,7 +22,7 @@ function DashboardLayout() {
           {activeSection === 'watchNow' && <CombinedWatchNowDashboard />}
           {activeSection === 'announcements' && <CombinedAnnouncementsDashboard />}
           {activeSection === 'subscribers' && <SubscribersDashboard />}
-          {activeSection === 'store' && <StoreDashboard />} {/* New section */}
+          {activeSection === 'store' && <StoreDashboard />} 
         </div>
       </div>
     </div>

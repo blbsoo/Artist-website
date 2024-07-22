@@ -1,4 +1,4 @@
-// pages/api/test-connection.js
+
 import { Pool } from 'pg';
 
 const pool = new Pool({

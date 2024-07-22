@@ -1,5 +1,5 @@
 import { Pool } from 'pg';
-import sendEmail from '../../utils/email';  // Adjust the import path
+import sendEmail from '../../utils/email'; 
 
 const pool = new Pool({
   host: process.env.PGHOST,
